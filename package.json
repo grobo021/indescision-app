@@ -1,0 +1,21 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrew Mead",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server ./build",
+    "lint": "eslint",
+    "build": "babel ./src/app.jsx --out-file=./build/scripts/app.js",
+    "build:watch": "babel ./src/app.jsx --out-file=./build/scripts/app.js --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "live-server": "^1.2.1",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
